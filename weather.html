@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+       <div class="main">
+             <h2 style="text-align: center; color: rgb(3, 131, 65);">Weather Report</h2>
+           <div class="card">
+              <div class="search">
+                 <input type="text" name="city" id="city" placeholder="Enter city name" spellcheck="false">
+                 <button class="search-icon" onclick="insert_data()"><i style="color: black;" class="fa-solid fa-magnifying-glass"></i></button>
+              </div>  
+              <div class="weather">
+                   
+                    <img src="png/004-sun.png" alt="" height="80px" width="80px" class="weather_icon">
+                    <h2 class="weather_cond" style="margin-bottom: 10px;">Sunny</h2>
+                    <h1 class="temp">Degrees</h1>
+                    <h2 class="city">City Name</h2>
+
+                    <div class="details">
+                          <div class="col">
+                              <img src="humidity1.jpg" alt="" height="45px" width="45px">
+                              <div class="info">
+                                 <p class="humidity" style="font-size: 0.8rem; ">50%</p>
+                                 <p>Humidity</p>
+                              </div>
+                          </div>
+                          <div class="col">
+                           <img src="png/024-wind.png" alt="" height="45px" width="45px">
+                           <div class="info">
+                              <p class="Wind Speed" style="font-size: 0.8rem;">12kmph</p>
+                              <p>Wind Speed</p>
+                           </div>
+                       </div>
+                    </div>
+
+              </div>
+          </div>
+       </div>
+       
+      <script src="weather.js"></script>
+</body>
+</html>
+
+    
